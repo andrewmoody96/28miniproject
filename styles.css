@@ -1,0 +1,56 @@
+:root {
+    /* declare a variable with `--` syntax */
+    --dark: #242435;
+    --light: #e7c7b4;
+    --lightest: #b7b7b7;
+    --codeblock: #b75400;
+    --codeblockborder: #7f6000;
+    --backgroundfill: #ab9a55;
+    --backgroundborder: #676b30;
+    --accentfill: #a65637fc;
+    --accentborder: #742e12;
+
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: var(--dark);
+
+
+}
+
+main {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+
+.card {
+    background-color: var(---light);
+    flex: 33.3%;
+}
+
+.card code {
+    background-color: var(--codeblock);
+ 
+}
+
+
+/* @media only screen and (max-width: 990px) {
+    main {
+        flex-direction: column;
+        background-color: var(--backgroundfill);
+        align-items: center;
+    }
+} */
+
+@media only screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        background-color: var(--backgroundfill);
+        align-items: center;
+    }
+}
